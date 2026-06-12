@@ -203,7 +203,7 @@ mark{background:var(--green3);color:var(--ddgreen);padding:0 2px;border-radius:3
       <a class="item" data-page="colmeia"><span class="ic">✆</span>ColmeIA (WhatsApp)</a>
       <a class="item" data-page="intercom"><span class="ic">✉</span>Intercom (App)</a>
     </div>
-    <div class="nav-group"><div class="gl">Playbooks</div>
+    <div class="nav-group"><div class="gl">Playbooks · Atendimento</div>
       <a class="item" data-page="pb-emprogresso"><span class="ic">▣</span>Atendimento Em Progresso</a>
       <a class="item" data-page="pb-robo"><span class="ic">⚙</span>Robô de Status</a>
     </div>
@@ -223,6 +223,8 @@ mark{background:var(--green3);color:var(--ddgreen);padding:0 2px;border-radius:3
     <div class="nav-group"><div class="gl">Operação</div>
       <a class="item" data-page="status"><span class="ic">⟳</span>Status da proposta</a>
       <a class="item" data-page="formalizacao"><span class="ic">✎</span>Formalização / Assinatura</a>
+      
+      <a class="item" data-page="automacoes"><span class="ic">🤖</span>Autodigitação por banco</a>
       <a class="item" data-page="bancos"><span class="ic">☎</span>Canais dos bancos</a>
     </div>
   </nav>
@@ -247,6 +249,8 @@ mark{background:var(--green3);color:var(--ddgreen);padding:0 2px;border-radius:3
       <div class="tile" data-go="formalizacao"><div class="ti">✎</div><h3>Formalização</h3><p>Assinatura digital, câmera, localização, anexo de documentos e situações especiais.</p><span class="arr">→</span></div>
       <div class="tile" data-go="clt"><div class="ti">◈</div><h3>Empréstimo CLT</h3><p>Crédito do Trabalhador (MP 1.292/2025): FGTS, eSocial, portabilidade e FAQ.</p><span class="arr">→</span></div>
       <div class="tile" data-go="konsigleads"><div class="ti">▦</div><h3>Konsigleads (CRM)</h3><p>Busca de propostas, funil de atendimento, troca de status, automações e histórico.</p><span class="arr">→</span></div>
+      
+      <div class="tile" data-go="automacoes"><div class="ti">🤖</div><h3>Autodigitação por banco</h3><p>Bancos com robô ativo e mapa de automações por convênio e tipo de operação.</p><span class="arr">→</span></div>
       <div class="tile" data-go="colmeia"><div class="ti">✆</div><h3>ColmeIA (WhatsApp)</h3><p>Como o atendimento chega, janelas de 24h, chamadas ativas, macros e tags.</p><span class="arr">→</span></div>
       <div class="tile" data-go="intercom"><div class="ti">✉</div><h3>Intercom (App)</h3><p>Mensageria dentro do aplicativo — o plano B quando o cliente não responde no WhatsApp.</p><span class="arr">→</span></div>
       <div class="tile" data-go="pb-emprogresso"><div class="ti">▣</div><h3>Playbook: Em Progresso</h3><p>Documentos, cliente agressivo, proposta travada, cancelamento + conversão e boas práticas de áudio.</p><span class="arr">→</span></div>
@@ -652,13 +656,11 @@ mark{background:var(--green3);color:var(--ddgreen);padding:0 2px;border-radius:3
 <p>É possível refinar a busca com filtros de todas as informações da proposta:</p>
 <p><span class="badge b-green">Datas</span> <span class="badge b-green">Status</span> <span class="badge b-green">Banco</span> <span class="badge b-green">Produto</span> <span class="badge b-green">Convênio</span></p>
 <!-- SUBSTITUA o bloco abaixo por um print da tela de busca do Konsigleads -->
-<div class="ph"><span class="ph-ic">📷</span><b>Espaço para print:</b> tela de busca do Konsigleads (substitua este bloco pela imagem)</div>
 </div>
 
 <div class="section"><h2>Dentro da proposta</h2>
 <p>Ao abrir uma proposta, você encontra todas as informações do contrato e da digitação — e, principalmente, o <b>histórico</b> de tudo o que aconteceu com ela: trocas de status, eventos e quem fez o quê. Na dúvida sobre o que dizer ao cliente, o histórico responde antes de você precisar perguntar a alguém.</p>
 <!-- SUBSTITUA o link abaixo por uma proposta de exemplo no Konsigleads -->
-<div class="ph"><span class="ph-ic">🔗</span><b>Espaço para link:</b> cole aqui o link de uma <b>proposta de exemplo</b> no Konsigleads para navegação guiada</div>
 </div>
 
 <div class="section"><h2>Troca de status e automações</h2>
@@ -683,7 +685,6 @@ mark{background:var(--green3);color:var(--ddgreen);padding:0 2px;border-radius:3
 <div class="step"><h4>Notificação de novo atendimento</h4><p>Você recebe o aviso e a conversa já está disponível para atender.</p></div>
 </div>
 <!-- SUBSTITUA o bloco abaixo por um print da notificação / fila de atendimentos -->
-<div class="ph"><span class="ph-ic">📷</span><b>Espaço para print:</b> notificação e fila de atendimentos no ColmeIA</div>
 </div>
 
 <div class="section"><h2>Janela de atendimento: aberta × fechada</h2>
@@ -703,7 +704,6 @@ mark{background:var(--green3);color:var(--ddgreen);padding:0 2px;border-radius:3
 <tr><td><strong>Funciona com janela fechada</strong></td><td>É o único formato aceito quando o cliente está há mais de 24h sem responder.</td></tr>
 </tbody></table></div>
 <!-- SUBSTITUA o bloco abaixo por um print do envio de chamada ativa -->
-<div class="ph"><span class="ph-ic">📷</span><b>Espaço para print:</b> envio de chamada ativa no ColmeIA</div>
 </div>
 
 <div class="section"><h2>Durante o atendimento: macros e tags</h2>
@@ -713,7 +713,6 @@ mark{background:var(--green3);color:var(--ddgreen);padding:0 2px;border-radius:3
 </tbody></table></div>
 <div class="note"><span class="nt">Parte prática</span>Esta etapa é demonstrada ao vivo, com atendimento real na plataforma.</div>
 <!-- SUBSTITUA o bloco abaixo por um link de material/gravação da demonstração prática -->
-<div class="ph"><span class="ph-ic">🔗</span><b>Espaço para link:</b> material ou gravação da demonstração prática de macros e tags</div>
 </div>
 </section>
 
@@ -730,7 +729,6 @@ mark{background:var(--green3);color:var(--ddgreen);padding:0 2px;border-radius:3
 <div class="step"><h4>Inicie a conversa</h4><p>Envie a mensagem e realize o atendimento normalmente. O cliente recebe dentro do aplicativo Konsi.</p></div>
 </div>
 <!-- SUBSTITUA o bloco abaixo por um print da abertura de atendimento -->
-<div class="ph"><span class="ph-ic">📷</span><b>Espaço para print:</b> abertura de atendimento por e-mail no Intercom</div>
 </div>
 
 <div class="section"><h2>Fique sempre de olho</h2>
@@ -740,7 +738,7 @@ mark{background:var(--green3);color:var(--ddgreen);padding:0 2px;border-radius:3
 </section>
 
 <section class="page" id="page-pb-emprogresso">
-<div class="crumb">Playbooks</div><h1>Atendimento na etapa Em Progresso</h1><p class="lead">Guia de referência do Time de Atendimento para a etapa <b>Em Progresso</b> — da solicitação de documentos ao manejo de situações críticas com o cliente. Equipe: Backoffice · Atendimento. Etapa: pós-assinatura.</p>
+<div class="crumb">Playbooks · Atendimento</div><h1>Atendimento na etapa Em Progresso</h1><p class="lead">Guia de referência do Time de Atendimento para a etapa <b>Em Progresso</b> — da solicitação de documentos ao manejo de situações críticas com o cliente. Equipe: Backoffice · Atendimento. Etapa: pós-assinatura.</p>
 
 <div class="section"><h2>O papel do atendimento nesta etapa</h2>
 <p>A etapa Em Progresso começa imediatamente após a assinatura do contrato e segue até a conclusão da operação — quando o crédito é liberado e o pagamento chega à conta do cliente. Nesse intervalo, o time de atendimento é o ponto de contato ativo que mantém tudo em movimento.</p>
@@ -905,7 +903,7 @@ mark{background:var(--green3);color:var(--ddgreen);padding:0 2px;border-radius:3
 </section>
 
 <section class="page" id="page-pb-robo">
-<div class="crumb">Playbooks</div><h1>Robô de Status</h1><p class="lead">Entenda como a automação apoia o time de atendimento — o que ela faz, o que ela não faz e como agir em cada situação. Ciclo de consulta: <b>a cada 30 minutos, das 7h às 18h</b>. Etapa principal: Em Progresso.</p>
+<div class="crumb">Playbooks · Atendimento</div><h1>Robô de Status</h1><p class="lead">Entenda como a automação apoia o time de atendimento — o que ela faz, o que ela não faz e como agir em cada situação. Ciclo de consulta: <b>a cada 30 minutos, das 7h às 18h</b>. Etapa principal: Em Progresso.</p>
 
 <div class="section"><h2>O que é o Robô de Status</h2>
 <p>Antes do robô, o time precisava consultar manualmente o status de cada proposta nos portais dos bancos e atualizar a esteira do Konsigleads — o que consumia tempo, aumentava o risco de erro e atrasava o atendimento.</p>
@@ -986,6 +984,172 @@ mark{background:var(--green3);color:var(--ddgreen);padding:0 2px;border-radius:3
   </div>
   <div class="bank-grid" id="bankGrid"></div>
 </section>
+<!-- ============ AUTOMAÇÕES BANCÁRIAS ============ -->
+<section class="page" id="page-automacoes">
+  <div class="crumb">Operação · Robô de Autodigitação</div>
+  <h1>Robô de Autodigitação</h1>
+  <p class="lead">Mapa de automações bancárias ativas na Konsi — relação de bancos com digitação automática e cobertura por convênio e tipo de operação.</p>
+
+  <div class="note"><span class="nt">Legenda</span><span class="badge b-green">✅ Ativo</span> &nbsp; <span class="badge b-amber">⚠️ Suspensa temporariamente</span></div>
+
+  <div class="section">
+    <h2>Bancos com automação ativa</h2>
+    <div class="tw"><table>
+      <thead><tr><th>#</th><th>Banco</th><th>Status</th><th>Operações automatizadas</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><strong>2010 / UY3 SCD S/A</strong></td><td><span class="badge b-green">✅ Ativo</span></td><td>Consignado CLT</td></tr>
+        <tr><td>2</td><td><strong>Banco Digio</strong></td><td><span class="badge b-green">✅ Ativo</span></td><td>Crédito Novo</td></tr>
+        <tr><td>3</td><td><strong>BCO Digimais S.A.</strong></td><td><span class="badge b-green">✅ Ativo</span></td><td>Crédito Novo <span class="badge b-amber">⚠️ susp. temp.</span> · Saque Cartão Benefícios · Saque Cartão Consignado · Consignado CLT</td></tr>
+        <tr><td>4</td><td><strong>BCO Mercantil do Brasil S.A.</strong></td><td><span class="badge b-green">✅ Ativo</span></td><td>Crédito Novo · Consignado CLT</td></tr>
+        <tr><td>5</td><td><strong>BCO Pine S.A.</strong></td><td><span class="badge b-green">✅ Ativo</span></td><td>Saque Cartão Benefícios · Saque Cartão Consignado</td></tr>
+        <tr><td>6</td><td><strong>BMG</strong></td><td><span class="badge b-green">✅ Ativo</span></td><td>Crédito Novo</td></tr>
+        <tr><td>7</td><td><strong>Facta</strong></td><td><span class="badge b-green">✅ Ativo</span></td><td>Consignado CLT</td></tr>
+        <tr><td>8</td><td><strong>Hope Consig</strong></td><td><span class="badge b-green">✅ Ativo</span></td><td>Crédito Novo · Saque Cartão Benefícios</td></tr>
+        <tr><td>9</td><td><strong>Meucash</strong></td><td><span class="badge b-green">✅ Ativo</span></td><td>Saque Cartão Benefícios · Saque Cartão Consignado</td></tr>
+        <tr><td>10</td><td><strong>Pan</strong></td><td><span class="badge b-green">✅ Ativo</span></td><td>Crédito Novo</td></tr>
+        <tr><td>11</td><td><strong>Pine</strong></td><td><span class="badge b-green">✅ Ativo</span></td><td>Saque Cartão Benefícios · Saque Cartão Consignado</td></tr>
+        <tr><td>12</td><td><strong>Safra</strong></td><td><span class="badge b-green">✅ Ativo</span></td><td>Crédito Novo</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="section">
+    <h2>Automações ativas por convênio</h2>
+    <p>Convênios cobertos: <strong>Bahia · Gov. São Paulo · Pref. São Paulo · Minas Gerais · Pernambuco · Alagoas</strong></p>
+
+    <!-- GOV BA -->
+    <div class="sector-block">
+      <div class="sector-head" style="background:#04513F">🏛️ GOV BA — Governo da Bahia</div>
+      <div class="sector-body">
+        <div class="tw" style="margin:12px 0"><table>
+          <thead><tr><th>Tipo de operação</th><th>Bancos com automação</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Crédito Novo</strong></td><td>SAFRA · DIGIO · HOPE · PAN</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <!-- GOV SP -->
+    <div class="sector-block">
+      <div class="sector-head" style="background:#0A6E58">🏛️ GOV SP — Governo de São Paulo</div>
+      <div class="sector-body">
+        <h3>↳ SEFAZ</h3>
+        <div class="tw" style="margin:8px 0 16px"><table>
+          <thead><tr><th>Tipo de operação</th><th>Bancos com automação</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Crédito Novo</strong></td><td>SAFRA · BMG · HOPE · PAN</td></tr>
+            <tr><td><strong>Cartão Benefícios</strong></td><td>DIGIMAIS · PINE</td></tr>
+            <tr><td><strong>Cartão Consignado</strong></td><td>DIGIMAIS · PINE</td></tr>
+          </tbody>
+        </table></div>
+        <h3>↳ SPPREV</h3>
+        <div class="tw" style="margin:8px 0 16px"><table>
+          <thead><tr><th>Tipo de operação</th><th>Bancos com automação</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Crédito Novo</strong></td><td>SAFRA · BMG · PAN · HOPE</td></tr>
+            <tr><td><strong>Cartão Benefícios</strong></td><td>PINE</td></tr>
+            <tr><td><strong>Cartão Consignado</strong></td><td>PINE</td></tr>
+          </tbody>
+        </table></div>
+        <h3>↳ PMESP / CBMESP</h3>
+        <div class="tw" style="margin:8px 0 16px"><table>
+          <thead><tr><th>Tipo de operação</th><th>Bancos com automação</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Crédito Novo</strong></td><td>SAFRA · BMG · HOPE · PAN</td></tr>
+            <tr><td><strong>Cartão Benefícios</strong></td><td>DIGIMAIS · PINE</td></tr>
+            <tr><td><strong>Cartão Consignado</strong></td><td>DIGIMAIS · PINE</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <!-- PREF SP -->
+    <div class="sector-block">
+      <div class="sector-head" style="background:#0A9F82">🏛️ PREF SP — Prefeitura de São Paulo</div>
+      <div class="sector-body">
+        <div class="tw" style="margin:12px 0"><table>
+          <thead><tr><th>Tipo de operação</th><th>Bancos com automação</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Crédito Novo</strong></td><td>BMG · SAFRA · HOPE · PAN</td></tr>
+            <tr><td><strong>Cartão Benefícios</strong></td><td>DIGIMAIS · PINE</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <!-- GOV MG -->
+    <div class="sector-block">
+      <div class="sector-head" style="background:#0D94C7">🏛️ GOV MG — Governo de Minas Gerais</div>
+      <div class="sector-body">
+        <h3>↳ SEPLAG</h3>
+        <div class="tw" style="margin:8px 0 16px"><table>
+          <thead><tr><th>Tipo de operação</th><th>Bancos com automação</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Crédito Novo</strong></td><td>BMG <span class="badge b-amber">⚠️ susp. temp.</span> · DIGIO · HOPE · PAN</td></tr>
+            <tr><td><strong>Cartão Benefícios</strong></td><td>PINE</td></tr>
+            <tr><td><strong>Cartão Consignado</strong></td><td>PINE</td></tr>
+          </tbody>
+        </table></div>
+        <h3>↳ PMMG <span class="badge b-amber" style="font-size:11px">⚠️ Suspenso temporariamente</span></h3>
+        <div class="tw" style="margin:8px 0 16px"><table>
+          <thead><tr><th>Tipo de operação</th><th>Bancos com automação</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Crédito Novo</strong></td><td>PAN · DIGIO · HOPE</td></tr>
+            <tr><td><strong>Cartão Benefícios</strong></td><td>PINE</td></tr>
+            <tr><td><strong>Cartão Consignado</strong></td><td>PINE</td></tr>
+          </tbody>
+        </table></div>
+        <h3>↳ CBMMG</h3>
+        <div class="tw" style="margin:8px 0 16px"><table>
+          <thead><tr><th>Tipo de operação</th><th>Bancos com automação</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Crédito Novo</strong></td><td>BMG · DIGIO · HOPE</td></tr>
+            <tr><td><strong>Cartão Benefícios</strong></td><td>PINE</td></tr>
+            <tr><td><strong>Cartão Consignado</strong></td><td>PINE</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <!-- GOV PE -->
+    <div class="sector-block">
+      <div class="sector-head" style="background:#5B3E9E">🏛️ GOV PE — Governo de Pernambuco</div>
+      <div class="sector-body">
+        <div class="tw" style="margin:12px 0"><table>
+          <thead><tr><th>Tipo de operação</th><th>Bancos com automação</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Crédito Novo</strong></td><td>DIGIO · HOPE</td></tr>
+            <tr><td><strong>Cartão Benefícios</strong></td><td>PINE</td></tr>
+            <tr><td><strong>Cartão Consignado</strong></td><td>HOPE</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <!-- GOV AL -->
+    <div class="sector-block">
+      <div class="sector-head" style="background:#7A3E1E">🏛️ GOV AL — Governo de Alagoas</div>
+      <div class="sector-body">
+        <div class="tw" style="margin:12px 0"><table>
+          <thead><tr><th>Tipo de operação</th><th>Bancos com automação</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Crédito Novo</strong></td><td>DIGIO · PAN</td></tr>
+            <tr><td><strong>Cartão Benefícios</strong></td><td>MEUCASH · PINE</td></tr>
+            <tr><td><strong>Cartão Consignado</strong></td><td>—</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Observações técnicas</h2>
+    <div class="note warn"><span class="nt">Lecca</span>Scrapper ativo, operando somente para <strong>criação comercial</strong>.</div>
+    <div class="note warn"><span class="nt">Capital Consig</span>API ativa, operando somente para <strong>criação manual</strong>.</div>
+  </div>
+</section>
+
 <script>
 const BANKS=[{"name": "Agibank", "code": "121", "rows": [{"l": "Capitais", "v": "3004-2221"}, {"l": "Demais loc.", "v": "0800 602 0022"}]}, {"name": "Alfa", "code": "025", "rows": [{"l": "Capitais", "v": "4004-3344"}, {"l": "Demais loc.", "v": "0800 725 3344"}, {"l": "Def. auditivo", "v": "0800 770 5244"}, {"l": "E-mail", "v": "alfaline@bancoalfa.com.br"}]}, {"name": "Banco do Brasil", "code": "001", "rows": [{"l": "Capitais", "v": "4004-0001"}, {"l": "Demais loc.", "v": "0800 729 0001"}, {"l": "Obs.", "v": "Empréstimos › Consultas › Extrato"}]}, {"name": "Banrisul", "code": "041", "rows": [{"l": "Porto Alegre", "v": "(51) 3210-0122"}, {"l": "Demais loc.", "v": "0800 541 8855"}, {"l": "WhatsApp", "v": "(51) 3215-1800"}]}, {"name": "Bari", "code": "330", "rows": [{"l": "Capitais", "v": "4007-2628"}, {"l": "Demais loc.", "v": "0800 602 7007"}, {"l": "E-mail", "v": "ajuda@bancobari.com.br"}]}, {"name": "Blue Assist", "code": "—", "rows": [{"l": "WhatsApp", "v": "(11) 3003-4521"}, {"l": "E-mail", "v": "suporte@blueassist.com.br"}]}, {"name": "BMG", "code": "318", "rows": [{"l": "Celular", "v": "4002-7007"}, {"l": "Fixo", "v": "0800 770 1790"}, {"l": "WhatsApp", "v": "(11) 3003-3955"}]}, {"name": "BNP Paribas", "code": "755", "rows": [{"l": "Tel 1", "v": "(11) 3841-3100"}, {"l": "Tel 2", "v": "(11) 2360-3100"}]}, {"name": "Bradesco", "code": "237", "rows": [{"l": "Capitais", "v": "4002-0022"}, {"l": "Demais loc.", "v": "0800 570 0022"}, {"l": "Def. auditivo", "v": "0800 722 0099"}]}, {"name": "Bradesco Financiamento", "code": "394", "rows": [{"l": "Capitais", "v": "4004-4433"}, {"l": "Demais loc.", "v": "0800 722 4433"}]}, {"name": "C6 Bank", "code": "336", "rows": [{"l": "Capitais", "v": "3003-6116"}, {"l": "Demais loc.", "v": "0800 660 6116"}, {"l": "WhatsApp", "v": "(11) 2832-6088"}]}, {"name": "Caixa Econômica", "code": "104", "rows": [{"l": "Capitais", "v": "4004-0104"}, {"l": "Demais loc.", "v": "0800 104 0104"}, {"l": "WhatsApp", "v": "0800 104 0104"}]}, {"name": "Capital Consig", "code": "—", "rows": [{"l": "Telefone", "v": "(11) 4210-2496"}, {"l": "E-mail", "v": "contato@capitalconsig.com.br"}]}, {"name": "Crefisa", "code": "069", "rows": [{"l": "Central", "v": "(11) 3003-3376"}, {"l": "WhatsApp", "v": "0800 273 3376"}, {"l": "SAC", "v": "0800 727 4884"}, {"l": "Ouvidoria", "v": "0800 703 8891"}]}, {"name": "Crefaz", "code": "—", "rows": [{"l": "SAC", "v": "0800 052 5051"}, {"l": "Ouvidoria", "v": "0800 067 5757"}, {"l": "E-mail", "v": "ouvidoria@crefaz.com.br"}]}, {"name": "Daycoval", "code": "707", "rows": [{"l": "Central", "v": "0300 111 0500"}, {"l": "SAC", "v": "0800 775 0500"}, {"l": "Ouvidoria", "v": "0800 777 0900"}, {"l": "WhatsApp", "v": "(11) 99111-6583"}]}, {"name": "Digio", "code": "335", "rows": [{"l": "Capitais", "v": "3003-8734"}, {"l": "Demais loc.", "v": "0800 333 8734"}, {"l": "Ouvidoria", "v": "0800 333 1474"}]}, {"name": "Facta Financeira", "code": "149", "rows": [{"l": "WhatsApp demais", "v": "(51) 3021-7833"}, {"l": "WhatsApp CLT", "v": "0800 942 0462"}, {"l": "SAC", "v": "sac.factafinanceira.com.br"}]}, {"name": "Hope Asset", "code": "—", "rows": [{"l": "Telefones", "v": "(11) 3125-1000 / 3125-1001"}, {"l": "E-mail", "v": "hopeasset@hopeasset.com.br"}]}, {"name": "Inbursa", "code": "012", "rows": [{"l": "Capitais", "v": "(11) 3030-4444"}, {"l": "Demais loc.", "v": "0800 641-4444"}]}, {"name": "Inter", "code": "077", "rows": [{"l": "Capitais", "v": "3003-4070"}, {"l": "Demais loc.", "v": "0800 940-0007"}, {"l": "Obs.", "v": "App › Empréstimo › Consignado › Contratos"}]}, {"name": "Itaú", "code": "341", "rows": [{"l": "Capitais", "v": "4004-4828"}, {"l": "Demais loc.", "v": "0800 970-4828"}, {"l": "Exterior", "v": "+55 11 4004-4828"}, {"l": "SAC", "v": "0800 728 0728"}]}, {"name": "Itaú Consignados", "code": "341", "rows": [{"l": "Capitais", "v": "4004-4828"}, {"l": "Demais loc.", "v": "0800 970-4828"}, {"l": "SAC", "v": "0800 724 2101"}, {"l": "Ouvidoria", "v": "0800 570 0011"}, {"l": "WhatsApp", "v": "(11) 5225-0828"}]}, {"name": "Kardbank", "code": "—", "rows": [{"l": "Central", "v": "0800 015 0001"}]}, {"name": "Master (Credcesta)", "code": "243", "rows": [{"l": "Capitais", "v": "4003-4952"}, {"l": "Demais loc.", "v": "0800 881-0001"}, {"l": "SAC", "v": "0800 729 0779"}, {"l": "Ouvidoria", "v": "0800 099 9088"}]}, {"name": "Master", "code": "243", "rows": [{"l": "Capitais", "v": "4003-4952"}, {"l": "Demais loc.", "v": "0800 881-0001"}, {"l": "SAC", "v": "0800 729 0779"}, {"l": "Ouvidoria", "v": "0800 729 1710"}]}, {"name": "Mercantil", "code": "389", "rows": [{"l": "WhatsApp/SAC", "v": "0800 7070 398"}, {"l": "Ouvidoria", "v": "0800 7070 384"}]}, {"name": "Meu Cash Card", "code": "—", "rows": [{"l": "Central", "v": "4003-7688"}, {"l": "E-mail", "v": "faleconosco@meucashcard.com.br"}]}, {"name": "Nubank", "code": "260", "rows": [{"l": "Capitais", "v": "4020-0185"}, {"l": "Demais loc.", "v": "0800 591 2117"}]}, {"name": "Olé", "code": "169", "rows": [{"l": "Capitais", "v": "3003-4324"}, {"l": "Demais loc.", "v": "0800 709-1234"}, {"l": "SAC", "v": "0800 726-7454"}, {"l": "Ouvidoria", "v": "0800 726-7404"}]}, {"name": "Pan", "code": "623", "rows": [{"l": "Capitais", "v": "4002-1687"}, {"l": "Demais loc.", "v": "0800 775-8686"}, {"l": "WhatsApp", "v": "(11) 4003-0101"}, {"l": "SAC", "v": "0800 776-8000"}]}, {"name": "Paraná Banco", "code": "254", "rows": [{"l": "SAC", "v": "0800 645 6090"}]}, {"name": "Parati", "code": "133", "rows": [{"l": "Telefone", "v": "(27) 2123-4777"}, {"l": "E-mail", "v": "sac@parati-cfi.com.br"}]}, {"name": "Paulista", "code": "654", "rows": [{"l": "Telefone", "v": "(11) 3299-2000"}, {"l": "E-mail", "v": "sac@bancopaulista.com.br"}]}, {"name": "PH Tech", "code": "—", "rows": [{"l": "WhatsApp", "v": "(11) 4765-1700"}]}, {"name": "PicPay", "code": "380", "rows": [{"l": "SAC", "v": "0800 025 8000"}, {"l": "Ouvidoria", "v": "0800 025 2000"}]}, {"name": "Pine (Amigoz)", "code": "643", "rows": [{"l": "SAC", "v": "0800 942 1702"}, {"l": "Empréstimos", "v": "0800 772 5283"}, {"l": "Cartão Amigoz", "v": "0800 772 5271"}, {"l": "Ouvidoria", "v": "0800 725 7463"}]}, {"name": "Prata Digital", "code": "—", "rows": [{"l": "Telefone", "v": "(21) 3942-0070"}, {"l": "WhatsApp", "v": "wa.me/552139422489"}]}, {"name": "Safra", "code": "422", "rows": [{"l": "Central", "v": "0300 151 1234"}, {"l": "WhatsApp", "v": "(11) 2650-9999"}]}, {"name": "Santander", "code": "033", "rows": [{"l": "Capitais", "v": "4001-4451"}, {"l": "Demais loc.", "v": "0800 728-4451"}, {"l": "SAC", "v": "0800 726-4551"}, {"l": "Def. auditivo", "v": "0800 771-0301"}]}, {"name": "PagSeguro", "code": "290", "rows": [{"l": "Capitais", "v": "4003-1775"}, {"l": "Demais loc.", "v": "0800 728-2174"}, {"l": "Ouvidoria", "v": "0800 728-2167"}]}, {"name": "Senff", "code": "—", "rows": [{"l": "Telefone", "v": "0800 595 0595"}, {"l": "WhatsApp", "v": "0800 595 0595"}, {"l": "E-mail", "v": "atendimento@senff.com.br"}]}, {"name": "Sicoob", "code": "756", "rows": [{"l": "Capitais", "v": "4000 1111"}, {"l": "Demais loc.", "v": "0800 642 0000"}, {"l": "Def. auditivo", "v": "0800 940 0458"}]}, {"name": "Sicredi", "code": "748", "rows": [{"l": "Telefone", "v": "0800 724 7220"}, {"l": "Def. auditivo", "v": "0800 724 0525"}, {"l": "WhatsApp", "v": "(51) 3358-4770"}]}, {"name": "Vemcard", "code": "—", "rows": [{"l": "Telefone", "v": "0800 591 8687"}, {"l": "WhatsApp", "v": "(11) 99781-8983"}, {"l": "E-mail", "v": "sac@vemcard.com.br"}]}, {"name": "Will Bank", "code": "280", "rows": [{"l": "Central", "v": "3003-2593"}, {"l": "SAC", "v": "0800 772 1026"}, {"l": "Ouvidoria", "v": "0800 945 2265"}]}];
 
